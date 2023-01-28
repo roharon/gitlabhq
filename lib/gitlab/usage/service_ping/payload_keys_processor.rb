@@ -13,7 +13,7 @@ module Gitlab
         end
 
         def key_paths
-          @key_paths ||= payload_keys.to_a.flatten.compact
+          @key_paths ||= payload_keys.flatten.compact
         end
 
         def missing_instrumented_metrics_key_paths
